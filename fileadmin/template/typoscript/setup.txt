@@ -1,0 +1,46 @@
+
+
+## Page
+#---------------------------------
+
+page = PAGE
+page {
+
+	10 = FLUIDTEMPLATE
+	10 {
+
+				file.stdWrap.cObject = CASE
+		file.stdWrap.cObject {
+			# slide the template
+			key.data = levelfield:-1, backend_layout_next_level, slide
+			key.override.field = backend_layout
+
+			# template file for backend-layout with ID x
+			1 = TEXT
+			1.value = fileadmin/template/html/Template/Default.html
+		}
+
+		partialRootPath = fileadmin/template/html/Partial/
+		layoutRootPath = fileadmin/template/html/Layout/
+
+		variables {
+
+		}
+	}
+
+
+
+	includeCSS {
+		file1 = fileadmin/template/assets/css/style.css
+		file1.media = all
+
+		}
+
+
+	includeJSFooter {
+		#modernizr = fileadmin/template/assets/js/libs/modernizr.custom.63405.js
+		#jquery = fileadmin/template/assets/js/libs/jquery/jquery-3.2.1.min.js
+		script = fileadmin/template/assets/js/script.js
+	}
+
+}
