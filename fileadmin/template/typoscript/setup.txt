@@ -38,8 +38,8 @@ page {
 
 
 	includeJSFooter {
-		modernizr = fileadmin/template/assets/js/libs/modernizr.custom.63405.js
-		jquery = fileadmin/template/assets/js/libs/jquery/jquery-3.2.1.min.js
+		#modernizr = fileadmin/template/assets/js/libs/modernizr.custom.63405.js
+		#jquery = fileadmin/template/assets/js/libs/jquery/jquery-3.2.1.min.js
 		script = fileadmin/template/assets/js/script.js
 	}
 
